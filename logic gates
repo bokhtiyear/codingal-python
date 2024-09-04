@@ -1,0 +1,13 @@
+#if a==1 or b==1:
+        #return True
+    
+#     else:
+#         return False
+# a = int(input( ))
+# b = int(input( ))
+#print(Or(a,b))
+ 
+def Not(a):
+    return not a
+a = int(input())
+print(Not(a))
