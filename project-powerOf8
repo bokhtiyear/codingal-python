@@ -1,0 +1,19 @@
+def powerOf8(n):
+    if n <= 0:
+        return 0
+    if n & (n -1) !=0:
+        return False
+    count = 0
+    while n > 1:
+        n >>= 1
+        count +=1
+        
+    return count % 3 ==0
+
+num = int(input("Enter a number:"))
+if(powerOf8(num)):
+    print("This number is power of 8")
+    
+    
+else:
+    print("The number is not power of  8")    
