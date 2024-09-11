@@ -1,0 +1,19 @@
+def d(divi,di):
+    if di == 0:
+        raise ValueError("dvisior can't be 0")
+    if divi == 0:
+        return 0
+    neg = (divi < 0) != (di < 0)
+    divi = abs(divi)
+    di = abs(di)
+    quotient = 0
+    while divi >= di:
+        divi -= di
+        quotient +=1
+        
+    return -quotient if neg else quotient    
+    
+    
+    
+r = d(90,12)
+print(r)    
