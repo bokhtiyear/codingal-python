@@ -1,0 +1,15 @@
+def longest_consecutive_ones(n):
+    
+    binary_rep = bin(n)[2:]
+    
+    
+    ones_sequences = binary_rep.split('0')
+    
+    
+    longest_sequence = max(ones_sequences, key=len)
+    
+    return len(longest_sequence)
+
+
+number = int(input("Enter a number: "))
+print(f"The longest consecutive 1's in binary representation of {number} is: {longest_consecutive_ones(number)}")
